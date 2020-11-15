@@ -17,8 +17,10 @@
 #include "float.h"
 
 
-#define WIDTH_PLOT_PIXEL 280
-#define HEIGHT_PLOT_PIXEL 180
+#define PLOT_HEIGHT_PLOT_PIXEL 280
+#define PLOT_WIDTH_PLOT_PIXEL 180
+#define PLOT_INDICATE_LEN 10
+
 #define LCD_FOREGROUND_LAYER 0x0001
 
 typedef struct MinMaxUnit{
@@ -36,8 +38,6 @@ typedef struct PointReal{
 
 void InitLCD();
 void PlotChart(double** data, int N);
-void PlotLineBeetwenPoints(PointReal p1, PointReal p2); //conversion to be done
-Point ConvertDataToPixelData(PointReal p1, PointReal p2,MinMaxUnit units, Point axes_coordinates);
 void PlotChartAxes(Point axis_coordinates, MinMaxUnit units, double interval_indicate);// internal_indicate in percentage
 
 
