@@ -77,6 +77,7 @@ void PlotChartAxes(Point axis_coordinates, MinMaxUnit units, double interval_ind
 		index += interval_indicate;
 //		for(int i = 0; i <)
 
+
 		delay(10000000);
 	}
 	free(str_temp);
